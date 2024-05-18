@@ -1,0 +1,13 @@
+
+<div class="card">
+  <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+  <h5 class="card-title">{{heroe.nombre}}</h5>
+  <p class="card-text">{{heroe.bio}}</p>
+  <small class="text-body-secondary">{{heroe.aparicion}}</small>
+  <br>
+  <div class="d-grid">
+    <button (click)="verHeroe()"
+    type="button" class="btn btn-outline-primary">Ver más...</button>
+    <!-- <a [routerLink]="['/heroe',i]" class=" btn btn-outline-primary">Ver más...</a> -->
+  </div>
+</div>
